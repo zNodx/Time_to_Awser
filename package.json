@@ -1,5 +1,5 @@
 {
-  "name": "time_to_awser",
+  "name": "time_to_answer",
   "private": true,
   "dependencies": {
     "bootstrap": "3.3.7",
@@ -13,7 +13,5 @@
   },
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:zNodx/Time_to_Awser.git",
-  "author": "<ffrmateus@gmail.com>",
   "license": "MIT"
 }

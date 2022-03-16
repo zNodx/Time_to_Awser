@@ -5,9 +5,7 @@
     <!-- /.col-lg-12 -->
 </div>
 
-
 <div class="row">
-
 
     <% if @admin.errors.any? %>
         <div class="alert alert-danger alert-dismissable">
@@ -21,11 +19,10 @@
         </div>
     <% end %>
 
-
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <%= "#{action_message} Administrador" %>
+                <%= @admin.model_name.human %>
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -42,12 +39,10 @@
                                 <%= form.password_field :password, class:"form-control", placeholder:"Senha"  %>
                             </div>
 
-
                             <div class="form-group">
                                 <%= form.label :password_confirmation %>
                                 <%= form.password_field :password_confirmation, class:"form-control", placeholder:"Confirmação da Senha"  %>
                             </div>
-
 
                             <button type="submit" class="btn btn-default">Salvar</button>
                         <% end %>

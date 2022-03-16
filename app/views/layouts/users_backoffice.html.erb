@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <title>TimeToAnswer</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -15,9 +14,7 @@
     <%= stylesheet_link_tag    'application' %>
     <%= stylesheet_link_tag    'users_backoffice' %>
 
-
   </head>
-
 
   <body class="nav-md">
     <div class="container body">
@@ -28,25 +25,21 @@
               <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
             </div>
 
-
             <div class="clearfix"></div>
-
 
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-               <%= image_tag 'img.jpg', alt:"...", class:"img-circle profile_img" %>
+                <%= image_tag 'img.jpg', alt:"...", class:"img-circle profile_img" %>
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <h2><%= current_user.email %></h2>
+                <h2>John Doe</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
 
-
             <br />
-
 
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
@@ -149,10 +142,8 @@
                 </ul>
               </div>
 
-
             </div>
             <!-- /sidebar menu -->
-
 
             <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
@@ -173,7 +164,6 @@
           </div>
         </div>
 
-
         <!-- top navigation -->
         <div class="top_nav">
           <div class="nav_menu">
@@ -181,7 +171,6 @@
               <div class="nav toggle">
                 <a id="menu_toggle"><i class="fa fa-bars"></i></a>
               </div>
-
 
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
@@ -192,13 +181,13 @@
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
                     <li>
-                    <%= link_to destroy_user_session_path, method: :delete do%>
-                    <i class="fa fa-sign-out pull-right"></i> Sair Fora.
-                    <% end %>
+                      <%= link_to destroy_user_session_path, method: :delete do %>
+                        <i class="fa fa-sign-out pull-right"></i>
+                        Sair
+                      <% end %>
                     </li>
                   </ul>
                 </li>
-
 
                 <li role="presentation" class="dropdown">
                   <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
@@ -278,7 +267,6 @@
         </div>
         <!-- /top navigation -->
 
-
         <!-- page content -->
         <div class="right_col" role="main">
           <div class="">
@@ -292,7 +280,6 @@
         </div>
         <!-- /page content -->
 
-
         <!-- footer content -->
         <footer>
           <div class="pull-right">
@@ -303,7 +290,6 @@
         <!-- /footer content -->
       </div>
     </div>
-
 
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'users_backoffice' %>
