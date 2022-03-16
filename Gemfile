@@ -38,7 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise', '<=4.8.1'
 gem 'kaminari', '=1.1.1'
-gem 'kaminari-i18n', '=0.5.0!'
+gem 'kaminari-i18n', '=0.5.0'
 gem 'rails-i18n', '~> 5.1'
 gem 'tty-spinner'
 gem 'faker'
