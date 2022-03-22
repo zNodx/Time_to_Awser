@@ -12,8 +12,8 @@
             <%= f.password_field :password, placeholder:"Senha", class:"form-control" %>
           </div>
           <div>
-            <%= f.submit "Entrar" , class:"btn btn-default submit text-center",
-              style: "float: none; margin-left: 0px; width: 50%;" %>
+            <%= f.submit "Entrar" , class:"btn btn-default submit text-center", style: "float: none; margin-left: 0px; width: 40%;" %>
+            <%= link_to "Reset Password", new_user_password_path, class:"reset_pass"%>
           </div>
           <div class="clearfix"></div>
           <div class="separator">
