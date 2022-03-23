@@ -43,6 +43,9 @@ gem 'tty-spinner'
 gem 'faker'
 gem 'kaminari'
 gem 'kaminari-i18n'
+gem 'trix'
+gem 'redis'
+gem 'hiredis'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

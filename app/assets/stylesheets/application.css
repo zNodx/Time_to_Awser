@@ -11,4 +11,10 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_self
+ *= require trix
  */
+
+ h3.panel-title div {
+  display: inline;
+ }
+

@@ -31,9 +31,10 @@
                         
                             <div class="form-group">
                                 <%= form.label :description %>
-                                <%= form.text_area :description, 
+                                <%= form.hidden_field :description, 
                                          class:"form-control", 
                                         placeholder: t('placeholder.question_description'), rows: 5  %>
+                                <trix-editor input="question_description"></trix-editor>
                             </div>
 
                             <div class="form-group">
@@ -43,11 +44,12 @@
 
                             <div id='answers'>
                                 <%= form.fields_for :answers do |answer| %>
-                                <%= render partial: "answer_fields", locals: { f: answer } %>
+                                  <%= render partial: "answer_fields", locals: { f: answer } %>
                                 <% end %>
-                                <%= link_to_add_association('[Adicionar Resposta]', form, :answers) %>
+
+                                <%= link_to_add_association '[Adicionar Resposta]', form, :answers %>
                             </div>
-                            
+
                             <button type="submit" class="btn btn-default">
                               <%= t('button.save') %>
                             </button>
